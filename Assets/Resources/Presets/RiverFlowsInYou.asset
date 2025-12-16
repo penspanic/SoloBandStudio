@@ -1,0 +1,463 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f7248106d4462f8bd8bee1a9e6d83, type: 3}
+  m_Name: RiverFlowsInYou
+  m_EditorClassIdentifier:
+  songName: River Flows in You
+  artist: Yiruma
+  description: Beautiful and flowing melody, perfect for peaceful moments in nature
+  bpm: 68
+  beatsPerBar: 4
+  totalBars: 8
+  tracks:
+  - trackName: Left Hand Arpeggios
+    instrumentType: 0
+    events:
+    - beatTime: 0
+      note: 45
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 0.5
+      note: 52
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 1
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 1.5
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 2
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 2.5
+      note: 52
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 3
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 3.5
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 4
+      note: 47
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 4.5
+      note: 54
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 5
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 5.5
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 6
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 6.5
+      note: 54
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 7
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 7.5
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 8
+      note: 48
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 8.5
+      note: 55
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 9
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 9.5
+      note: 62
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 10
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 10.5
+      note: 55
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 11
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 11.5
+      note: 62
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 12
+      note: 50
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 12.5
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 13
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 13.5
+      note: 64
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 14
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 14.5
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 15
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 15.5
+      note: 64
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 16
+      note: 45
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 16.5
+      note: 52
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 17
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 17.5
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 18
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 18.5
+      note: 52
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 19
+      note: 56
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 19.5
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 20
+      note: 47
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 20.5
+      note: 54
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 21
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 21.5
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 22
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 22.5
+      note: 54
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 23
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 23.5
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 24
+      note: 48
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 24.5
+      note: 55
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 25
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 25.5
+      note: 62
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 26
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 26.5
+      note: 55
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 27
+      note: 59
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 27.5
+      note: 62
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 28
+      note: 50
+      velocity: 0.5
+      duration: 0.5
+    - beatTime: 28.5
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 29
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 29.5
+      note: 64
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 30
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 30.5
+      note: 57
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 31
+      note: 61
+      velocity: 0.4
+      duration: 0.5
+    - beatTime: 31.5
+      note: 64
+      velocity: 0.4
+      duration: 0.5
+    isMuted: 0
+    volume: 1
+  - trackName: Melody
+    instrumentType: 0
+    events:
+    - beatTime: 0
+      note: 68
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 0.5
+      note: 69
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 1
+      note: 71
+      velocity: 0.7
+      duration: 1
+    - beatTime: 2
+      note: 69
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 2.5
+      note: 68
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 3
+      note: 69
+      velocity: 0.7
+      duration: 1
+    - beatTime: 4
+      note: 71
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 4.5
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 5
+      note: 74
+      velocity: 0.7
+      duration: 1
+    - beatTime: 6
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 6.5
+      note: 71
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 7
+      note: 69
+      velocity: 0.7
+      duration: 1
+    - beatTime: 8
+      note: 68
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 8.5
+      note: 69
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 9
+      note: 71
+      velocity: 0.7
+      duration: 1
+    - beatTime: 10
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 10.5
+      note: 74
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 11
+      note: 76
+      velocity: 0.7
+      duration: 1
+    - beatTime: 12
+      note: 74
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 12.5
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 13
+      note: 71
+      velocity: 0.7
+      duration: 2
+    - beatTime: 15
+      note: 69
+      velocity: 0.7
+      duration: 1
+    - beatTime: 16
+      note: 68
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 16.5
+      note: 69
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 17
+      note: 71
+      velocity: 0.7
+      duration: 1
+    - beatTime: 18
+      note: 69
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 18.5
+      note: 68
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 19
+      note: 69
+      velocity: 0.7
+      duration: 1
+    - beatTime: 20
+      note: 71
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 20.5
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 21
+      note: 74
+      velocity: 0.7
+      duration: 1
+    - beatTime: 22
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 22.5
+      note: 71
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 23
+      note: 69
+      velocity: 0.7
+      duration: 1
+    - beatTime: 24
+      note: 71
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 24.5
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 25
+      note: 74
+      velocity: 0.7
+      duration: 1
+    - beatTime: 26
+      note: 76
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 26.5
+      note: 78
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 27
+      note: 76
+      velocity: 0.7
+      duration: 1
+    - beatTime: 28
+      note: 74
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 28.5
+      note: 73
+      velocity: 0.7
+      duration: 0.5
+    - beatTime: 29
+      note: 71
+      velocity: 0.7
+      duration: 2
+    - beatTime: 31
+      note: 69
+      velocity: 0.7
+      duration: 1
+    isMuted: 0
+    volume: 1

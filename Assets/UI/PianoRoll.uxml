@@ -1,0 +1,92 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
+    editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI/CommonScrollbar.uss" />
+    <Style src="project://database/Assets/UI/CommonDropdown.uss" />
+    <Style src="project://database/Assets/UI/PianoRoll.uss" />
+
+    <engine:VisualElement name="piano-roll-root" class="piano-roll-root">
+
+        <!-- Toolbar -->
+        <engine:VisualElement class="toolbar">
+            <engine:DropdownField name="track-dropdown" label="Track" class="toolbar-dropdown" />
+            <engine:DropdownField name="quantize-dropdown" label="Grid" class="toolbar-dropdown" />
+
+            <!-- Edit Mode Buttons -->
+            <engine:VisualElement class="edit-mode-group">
+                <engine:Button name="edit-mode-btn" class="edit-mode-btn edit-mode-active">
+                    <engine:Label text="Edit" class="edit-mode-label" />
+                </engine:Button>
+                <engine:Button name="erase-mode-btn" class="edit-mode-btn">
+                    <engine:Label text="Erase" class="edit-mode-label" />
+                </engine:Button>
+            </engine:VisualElement>
+
+            <!-- Note Duration (shown when note selected) -->
+            <engine:VisualElement class="duration-group">
+                <engine:Label text="Duration:" class="toolbar-label" />
+                <engine:Label name="duration-label" text="1/4" class="duration-value" />
+            </engine:VisualElement>
+
+            <engine:VisualElement class="toolbar-spacer" />
+
+            <engine:VisualElement class="zoom-group">
+                <engine:Label text="Zoom" class="toolbar-label" />
+                <engine:Button name="zoom-out-btn" class="zoom-btn">
+                    <engine:Label text="-" class="zoom-btn-label" />
+                </engine:Button>
+                <engine:Label name="zoom-label" text="100%" class="zoom-value" />
+                <engine:Button name="zoom-in-btn" class="zoom-btn">
+                    <engine:Label text="+" class="zoom-btn-label" />
+                </engine:Button>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <!-- Main Content Area - New Structure -->
+        <engine:VisualElement class="main-content">
+
+            <!-- Top Row: Corner + Timeline -->
+            <engine:VisualElement class="header-row">
+                <engine:VisualElement class="corner-cell" />
+                <engine:VisualElement name="timeline-viewport" class="timeline-viewport">
+                    <engine:VisualElement name="timeline-content" class="timeline-content">
+                        <!-- Timeline markers generated dynamically -->
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+
+            <!-- Bottom Row: Piano Keys + Grid -->
+            <engine:VisualElement class="body-row">
+                <!-- Piano Keys - NOT a ScrollView, just clipped container -->
+                <engine:VisualElement name="piano-viewport" class="piano-viewport">
+                    <engine:VisualElement name="piano-content" class="piano-content">
+                        <!-- Piano keys generated dynamically -->
+                    </engine:VisualElement>
+                </engine:VisualElement>
+
+                <!-- Grid - The ONLY ScrollView -->
+                <engine:ScrollView name="grid-scroll" class="grid-scroll"
+                    vertical-scroller-visibility="Auto"
+                    horizontal-scroller-visibility="Auto"
+                    touch-scroll-type="Clamped"
+                    nested-interaction-kind="StopScrolling">
+                    <engine:VisualElement name="grid-container" class="grid-container">
+                        <engine:VisualElement name="grid-background" class="grid-background" />
+                        <engine:VisualElement name="notes-container" class="notes-container" />
+                        <engine:VisualElement name="playhead" class="playhead" />
+                    </engine:VisualElement>
+                </engine:ScrollView>
+            </engine:VisualElement>
+
+        </engine:VisualElement>
+
+        <!-- Status Bar -->
+        <engine:VisualElement class="status-bar">
+            <engine:Label name="status-label" text="No track selected" class="status-text" />
+            <engine:Label name="position-label" text="Bar 1 | Beat 1" class="position-text" />
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

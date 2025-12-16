@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11bd4cb2955b40cd859dabe3660db16, type: 3}
+  m_Name: RolandR8
+  m_EditorClassIdentifier: 
+  sounds:
+  - partType: 36
+    samples:
+    - {fileID: 8300000, guid: d8d49bbaef06d4185883342c5f42e399, type: 3}
+    - {fileID: 8300000, guid: d0aa8ef50dc674ee29575edc25cf917e, type: 3}
+  - partType: 38
+    samples:
+    - {fileID: 8300000, guid: dfc547a50f46d4676bde580ba7504271, type: 3}
+    - {fileID: 8300000, guid: ecebdd5e35c6a4f8181377e398022571, type: 3}
+  - partType: 42
+    samples:
+    - {fileID: 8300000, guid: 8c2015832b9084368b41b5fe8d1d7ca1, type: 3}
+  - partType: 46
+    samples:
+    - {fileID: 8300000, guid: 75ae6fc0624044c2ea0c59869993f0a5, type: 3}
+  - partType: 50
+    samples:
+    - {fileID: 8300000, guid: fb849af0fb8354c85a6104273c126cb6, type: 3}
+  - partType: 47
+    samples:
+    - {fileID: 8300000, guid: 6f708d8377bcf4c909205fdc988c512f, type: 3}
+  - partType: 45
+    samples:
+    - {fileID: 8300000, guid: 6f708d8377bcf4c909205fdc988c512f, type: 3}
+  - partType: 49
+    samples:
+    - {fileID: 8300000, guid: 702c04fe9e8884c06967122ceaa4ab40, type: 3}
+  - partType: 51
+    samples:
+    - {fileID: 8300000, guid: e371ee58ef7ea4fdcb19aacce9cb835e, type: 3}

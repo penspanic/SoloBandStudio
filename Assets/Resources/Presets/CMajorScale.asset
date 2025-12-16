@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f7248106d4462f8bd8bee1a9e6d83, type: 3}
+  m_Name: CMajorScale
+  m_EditorClassIdentifier: 
+  songName: C Major Scale
+  artist: Demo
+  description: Ascending and descending C major scale
+  bpm: 100
+  beatsPerBar: 4
+  totalBars: 4
+  tracks:
+  - trackName: Melody
+    instrumentType: 0
+    events:
+    - beatTime: 0
+      note: 60
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 0.5
+      note: 62
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 1
+      note: 64
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 1.5
+      note: 65
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 2
+      note: 67
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 2.5
+      note: 69
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 3
+      note: 71
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 3.5
+      note: 72
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 8
+      note: 72
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 8.5
+      note: 71
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 9
+      note: 69
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 9.5
+      note: 67
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 10
+      note: 65
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 10.5
+      note: 64
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 11
+      note: 62
+      velocity: 0.8
+      duration: 0.4
+    - beatTime: 11.5
+      note: 60
+      velocity: 0.8
+      duration: 0.4
+    isMuted: 0
+    volume: 1

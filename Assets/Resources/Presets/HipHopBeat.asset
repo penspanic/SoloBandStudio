@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f7248106d4462f8bd8bee1a9e6d83, type: 3}
+  m_Name: HipHopBeat
+  m_EditorClassIdentifier:
+  songName: Hip-Hop Beat
+  artist: SoloBandStudio
+  description: 'Boom bap style hip-hop beat with heavy kick and snare'
+  bpm: 90
+  beatsPerBar: 4
+  totalBars: 2
+  tracks:
+  - trackName: Hip-Hop Drums
+    instrumentType: 1
+    events:
+    - beatTime: 0
+      note: 36
+      velocity: 1
+      duration: 0
+    - beatTime: 0
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 0.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 1
+      note: 38
+      velocity: 1
+      duration: 0
+    - beatTime: 1
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 1.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 2
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 2.5
+      note: 36
+      velocity: 0.8
+      duration: 0
+    - beatTime: 2.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 3
+      note: 38
+      velocity: 1
+      duration: 0
+    - beatTime: 3
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 3.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 4
+      note: 36
+      velocity: 1
+      duration: 0
+    - beatTime: 4
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 4.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 5
+      note: 38
+      velocity: 1
+      duration: 0
+    - beatTime: 5
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 5.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 6
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 6.5
+      note: 36
+      velocity: 0.8
+      duration: 0
+    - beatTime: 6.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 7
+      note: 38
+      velocity: 1
+      duration: 0
+    - beatTime: 7
+      note: 42
+      velocity: 0.6
+      duration: 0
+    - beatTime: 7.5
+      note: 42
+      velocity: 0.5
+      duration: 0
+    - beatTime: 7.75
+      note: 38
+      velocity: 0.6
+      duration: 0
+    isMuted: 0
+    volume: 1

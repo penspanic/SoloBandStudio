@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd3c620c553043d49ff619fcb04061b, type: 3}
+  m_Name: ChordQuizSettings
+  m_EditorClassIdentifier: Assembly-CSharp::SoloBandStudio.ChordQuiz.ChordQuizSettings
+  timeLimit: 30
+  questionsPerSession: 10
+  baseOctave: 4
+  pointsPerCorrectAnswer: 100
+  pointsPerWrongAnswer: -20
+  speedBonusPoints: 50
+  speedBonusThreshold: 10
+  answerDelayMs: 1800
+  autoCheckDelayMs: 300
+  correctColor: {r: 0.3, g: 0.69, b: 0.31, a: 1}
+  wrongColor: {r: 0.96, g: 0.26, b: 0.21, a: 1}
+  feedbackDuration: 1.5

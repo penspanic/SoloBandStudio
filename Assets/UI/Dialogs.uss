@@ -1,0 +1,188 @@
+/* ============================================
+   Dialog System Styles
+   ============================================ */
+
+/* Overlay - covers entire screen */
+.dialog-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-overlay.hidden {
+    display: none;
+}
+
+/* Dialog Container */
+.dialog-container {
+    width: 320px;
+    padding: 24px;
+    background-color: rgb(45, 50, 60);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Title */
+.dialog-title {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+/* Input Field */
+.dialog-input {
+    margin-bottom: 16px;
+}
+
+.dialog-input .unity-base-field__label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    min-width: 70px;
+    margin-bottom: 4px;
+}
+
+.dialog-input .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 12px;
+    height: 40px;
+}
+
+.dialog-input .unity-base-text-field__input:focus {
+    border-color: rgb(66, 165, 245);
+    border-width: 2px;
+}
+
+/* Error Label */
+.dialog-error {
+    color: rgb(255, 100, 100);
+    font-size: 12px;
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+.dialog-error.hidden {
+    display: none;
+}
+
+/* Button Row */
+.dialog-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+/* Buttons */
+.dialog-btn {
+    min-width: 90px;
+    height: 38px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border-width: 0;
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.dialog-btn.confirm-btn {
+    background-color: rgb(66, 165, 245);
+}
+
+.dialog-btn.confirm-btn:hover {
+    background-color: rgb(100, 185, 255);
+}
+
+.dialog-btn.confirm-btn:active {
+    background-color: rgb(40, 140, 220);
+}
+
+.dialog-btn.cancel-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dialog-btn.cancel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dialog-btn.cancel-btn:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* File List */
+.dialog-file-list {
+    max-height: 250px;
+    min-height: 100px;
+    margin-bottom: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* File Item */
+.dialog-file-item {
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.dialog-file-name {
+    flex-grow: 1;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    -unity-text-align: middle-left;
+    padding-left: 12px;
+    margin-right: 6px;
+}
+
+.dialog-file-name:hover {
+    background-color: rgba(66, 165, 245, 0.3);
+}
+
+.dialog-file-name:active {
+    background-color: rgb(66, 165, 245);
+}
+
+.dialog-file-delete {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.dialog-file-delete:hover {
+    background-color: rgb(229, 57, 53);
+    color: rgb(255, 255, 255);
+}
+
+.dialog-file-delete:active {
+    background-color: rgb(200, 40, 40);
+}
+
+/* Empty State */
+.dialog-empty-text {
+    padding: 30px;
+    -unity-text-align: middle-center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    -unity-font-style: italic;
+}

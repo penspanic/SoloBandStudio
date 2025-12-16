@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+
+    <ui:VisualElement name="tod-root" class="tod-panel">
+
+        <!-- Time Display -->
+        <ui:VisualElement class="time-display">
+            <ui:Label name="time-label" text="12:00" class="time-label" />
+            <ui:Label name="period-label" text="Noon" class="period-label" />
+        </ui:VisualElement>
+
+        <!-- Time Slider -->
+        <ui:VisualElement class="slider-row">
+            <ui:VisualElement class="slider-header">
+                <ui:Label text="TIME OF DAY" class="slider-label" />
+                <ui:Label name="time-value" text="12:00" class="slider-value" />
+            </ui:VisualElement>
+            <ui:Slider name="time-slider" low-value="0" high-value="24" value="12" class="time-slider" />
+        </ui:VisualElement>
+
+        <!-- Speed Slider -->
+        <ui:VisualElement class="slider-row">
+            <ui:VisualElement class="slider-header">
+                <ui:Label text="TIME SPEED" class="slider-label" />
+                <ui:Label name="speed-value" text="1 min/hour" class="slider-value" />
+            </ui:VisualElement>
+            <ui:Slider name="speed-slider" low-value="1" high-value="120" value="60" class="speed-slider" />
+        </ui:VisualElement>
+
+        <!-- Control Buttons -->
+        <ui:VisualElement class="control-row">
+            <ui:Button name="play-pause-btn" class="control-btn play-pause-btn">
+                <ui:Label name="play-pause-label" text="||" class="control-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Preset Buttons -->
+        <ui:VisualElement class="preset-row">
+            <ui:Button name="dawn-btn" class="preset-btn dawn-btn">
+                <ui:Label text="Dawn" class="preset-label" />
+            </ui:Button>
+            <ui:Button name="noon-btn" class="preset-btn noon-btn">
+                <ui:Label text="Noon" class="preset-label" />
+            </ui:Button>
+            <ui:Button name="dusk-btn" class="preset-btn dusk-btn">
+                <ui:Label text="Dusk" class="preset-label" />
+            </ui:Button>
+            <ui:Button name="midnight-btn" class="preset-btn midnight-btn">
+                <ui:Label text="Night" class="preset-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

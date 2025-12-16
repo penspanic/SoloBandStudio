@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+
+    <ui:VisualElement name="quick-menu-root" class="quick-menu-root">
+
+        <!-- Tab Bar -->
+        <ui:VisualElement name="tab-bar" class="tab-bar">
+            <ui:Button name="tab-loopstation" class="tab-btn active">
+                <ui:Label text="Loop" class="tab-label" />
+            </ui:Button>
+            <ui:Button name="tab-tod" class="tab-btn">
+                <ui:Label text="Time" class="tab-label" />
+            </ui:Button>
+            <ui:Button name="tab-settings" class="tab-btn">
+                <ui:Label text="Settings" class="tab-label" />
+            </ui:Button>
+            <ui:Button name="tab-misc" class="tab-btn">
+                <ui:Label text="Misc" class="tab-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Content Area - Tab contents will be loaded here -->
+        <ui:VisualElement name="content-area" class="content-area" />
+
+    </ui:VisualElement>
+</ui:UXML>

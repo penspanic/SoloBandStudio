@@ -1,0 +1,693 @@
+/* ============================================
+   Quick Menu - Compact Modern Theme
+   Consistent with LoopStationUI styling
+   ============================================ */
+
+/* Root Container */
+.quick-menu-root {
+    width: 320px;
+    background-color: rgba(30, 35, 45, 0.95);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ============================================
+   Tab Bar
+   ============================================ */
+
+.tab-bar {
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    padding: 4px;
+}
+
+.tab-btn {
+    flex-grow: 1;
+    height: 32px;
+    margin: 0 2px;
+    border-radius: 6px;
+    border-width: 0;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.15s;
+}
+
+.tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+    background-color: rgba(66, 165, 245, 0.3);
+    border-width: 1px;
+    border-color: rgb(66, 165, 245);
+}
+
+.tab-label {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tab-btn.active .tab-label {
+    color: rgb(255, 255, 255);
+}
+
+.tab-btn:hover .tab-label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   Content Area
+   ============================================ */
+
+.content-area {
+    padding: 12px;
+}
+
+/* ============================================
+   TOD Panel
+   ============================================ */
+
+.tod-panel {
+    flex-direction: column;
+}
+
+/* Time Display */
+.time-display {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background-color: rgba(66, 165, 245, 0.1);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: rgba(66, 165, 245, 0.3);
+}
+
+.time-label {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(66, 165, 245);
+}
+
+.period-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-font-style: italic;
+}
+
+/* Time Slider Row */
+.slider-row {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.slider-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.slider-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slider-value {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-font-style: bold;
+}
+
+.time-slider,
+.speed-slider {
+    height: 20px;
+}
+
+.time-slider .unity-base-slider__tracker,
+.speed-slider .unity-base-slider__tracker {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    height: 6px;
+    margin-top: 8px;
+}
+
+.time-slider .unity-base-slider__dragger,
+.speed-slider .unity-base-slider__dragger {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: rgb(66, 165, 245);
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    margin-top: 2px;
+}
+
+.time-slider .unity-base-slider__dragger:hover,
+.speed-slider .unity-base-slider__dragger:hover {
+    background-color: rgb(100, 185, 255);
+    scale: 1.1;
+}
+
+/* Control Row (Play/Pause) */
+.control-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.control-btn {
+    width: 50px;
+    height: 40px;
+    margin: 0 4px;
+    border-radius: 6px;
+    border-width: 2px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+}
+
+.play-pause-btn {
+    background-color: rgba(76, 175, 80, 0.2);
+    border-color: rgb(76, 175, 80);
+}
+
+.play-pause-btn:hover {
+    background-color: rgb(76, 175, 80);
+}
+
+.play-pause-btn.paused {
+    background-color: rgba(255, 193, 7, 0.2);
+    border-color: rgb(255, 193, 7);
+}
+
+.play-pause-btn.paused:hover {
+    background-color: rgb(255, 193, 7);
+}
+
+.control-label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* Preset Buttons Row */
+.preset-row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.preset-btn {
+    flex-grow: 1;
+    height: 28px;
+    margin: 0 2px;
+    border-radius: 4px;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+}
+
+.preset-btn .preset-label {
+    font-size: 10px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dawn-btn {
+    background-color: rgba(255, 183, 77, 0.2);
+    border-color: rgb(255, 183, 77);
+}
+
+.dawn-btn:hover {
+    background-color: rgb(255, 183, 77);
+}
+
+.dawn-btn:hover .preset-label {
+    color: rgb(0, 0, 0);
+}
+
+.noon-btn {
+    background-color: rgba(255, 235, 59, 0.2);
+    border-color: rgb(255, 235, 59);
+}
+
+.noon-btn:hover {
+    background-color: rgb(255, 235, 59);
+}
+
+.noon-btn:hover .preset-label {
+    color: rgb(0, 0, 0);
+}
+
+.dusk-btn {
+    background-color: rgba(255, 138, 101, 0.2);
+    border-color: rgb(255, 138, 101);
+}
+
+.dusk-btn:hover {
+    background-color: rgb(255, 138, 101);
+}
+
+.dusk-btn:hover .preset-label {
+    color: rgb(0, 0, 0);
+}
+
+.midnight-btn {
+    background-color: rgba(100, 120, 180, 0.2);
+    border-color: rgb(100, 120, 180);
+}
+
+.midnight-btn:hover {
+    background-color: rgb(100, 120, 180);
+}
+
+/* ============================================
+   Menu Hint (shown when menu is closed)
+   ============================================ */
+
+.menu-hint {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    translate: -50% 0;
+    padding: 6px 12px;
+    background-color: rgba(30, 35, 45, 0.8);
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hint-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================
+   Settings Panel (placeholder)
+   ============================================ */
+
+.settings-panel {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    -unity-text-align: middle-center;
+}
+
+/* ============================================
+   Animation States (for scripting)
+   ============================================ */
+
+.menu-hidden {
+    opacity: 0;
+    scale: 0.8 0.8;
+    translate: 0 20px;
+}
+
+.menu-visible {
+    opacity: 1;
+    scale: 1 1;
+    translate: 0 0;
+}
+
+/* ============================================
+   LoopStation Panel
+   ============================================ */
+
+.loopstation-panel {
+    flex-direction: column;
+}
+
+/* Status Display */
+.status-display {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.status-item {
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.status-indicator.active {
+    background-color: rgb(76, 175, 80);
+    border-color: rgb(129, 199, 132);
+}
+
+.status-indicator.recording {
+    background-color: rgb(244, 67, 54);
+    border-color: rgb(255, 138, 128);
+}
+
+.status-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Transport Row */
+.transport-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.transport-btn {
+    width: 60px;
+    height: 36px;
+    margin: 0 4px;
+    border-radius: 6px;
+    border-width: 2px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+}
+
+.transport-label {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.play-btn {
+    background-color: rgba(76, 175, 80, 0.2);
+    border-color: rgb(76, 175, 80);
+}
+
+.play-btn:hover {
+    background-color: rgb(76, 175, 80);
+}
+
+.play-btn.active {
+    background-color: rgb(76, 175, 80);
+}
+
+.stop-btn {
+    background-color: rgba(158, 158, 158, 0.2);
+    border-color: rgb(158, 158, 158);
+}
+
+.stop-btn:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.record-btn {
+    background-color: rgba(244, 67, 54, 0.2);
+    border-color: rgb(244, 67, 54);
+}
+
+.record-btn:hover {
+    background-color: rgb(244, 67, 54);
+}
+
+.record-btn.active {
+    background-color: rgb(244, 67, 54);
+}
+
+/* Dropdown Row */
+.dropdown-row {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* instrument-dropdown uses CommonDropdown.uss styles */
+.instrument-dropdown {
+    height: 28px;
+    margin-top: 4px;
+}
+
+/* BPM Slider */
+.bpm-slider {
+    height: 20px;
+}
+
+.bpm-slider .unity-base-slider__tracker {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    height: 6px;
+    margin-top: 8px;
+}
+
+.bpm-slider .unity-base-slider__dragger {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: rgb(255, 152, 0);
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    margin-top: 2px;
+}
+
+.bpm-slider .unity-base-slider__dragger:hover {
+    background-color: rgb(255, 183, 77);
+    scale: 1.1;
+}
+
+/* Settings Row (Beats & Bars) */
+.settings-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.setting-group {
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.setting-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.spinner {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.spinner-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.spinner-label {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.spinner-value {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    min-width: 30px;
+    -unity-text-align: middle-center;
+}
+
+/* Option Row (Toggle) */
+.option-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 6px 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.option-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 26px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.15s;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-btn.active {
+    background-color: rgba(76, 175, 80, 0.3);
+    border-color: rgb(76, 175, 80);
+}
+
+.toggle-btn.active:hover {
+    background-color: rgba(76, 175, 80, 0.5);
+}
+
+.toggle-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-font-style: bold;
+}
+
+.toggle-btn.active .toggle-label {
+    color: rgb(255, 255, 255);
+}
+
+/* Cycle Button (Quantize) */
+.cycle-btn {
+    min-width: 50px;
+    padding: 4px 10px;
+    height: 26px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.15s;
+}
+
+.cycle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cycle-btn.active {
+    background-color: rgba(66, 165, 245, 0.3);
+    border-color: rgb(66, 165, 245);
+}
+
+.cycle-btn.active:hover {
+    background-color: rgba(66, 165, 245, 0.5);
+}
+
+.cycle-label {
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+/* Loop Info */
+.loop-info {
+    padding: 8px;
+    background-color: rgba(66, 165, 245, 0.1);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(66, 165, 245, 0.3);
+    align-items: center;
+}
+
+.loop-info-text {
+    font-size: 11px;
+    color: rgb(66, 165, 245);
+    -unity-font-style: bold;
+}
+
+/* ============================================
+   Misc Panel
+   ============================================ */
+
+.misc-panel {
+    flex-direction: column;
+}
+
+.misc-section {
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.misc-btn {
+    height: 40px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+}
+
+.misc-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.misc-btn.primary-btn {
+    background-color: rgba(66, 165, 245, 0.2);
+    border-color: rgb(66, 165, 245);
+}
+
+.misc-btn.primary-btn:hover {
+    background-color: rgb(66, 165, 245);
+}
+
+.misc-btn-label {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.info-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    -unity-text-align: middle-center;
+    margin-top: 4px;
+}

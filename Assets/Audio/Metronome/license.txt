@@ -1,0 +1,25 @@
+Audio samples from Freesound
+----------------------------------------
+
+"Metronome click and bell" by m1rk0
+https://freesound.org/people/m1rk0/packs/3196/
+
+License: CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0/)
+
+Files in this folder
+--------------------
+
+  * metronome_tick.wav
+    - Original: 50070__m1rk0__metronom_klack.wav
+    - Source: https://freesound.org/s/50070/
+    - Modified: trimmed to 0.2s with fade-out
+
+  * metronome_accent.wav
+    - Original: 50071__m1rk0__metronom_pling.wav
+    - Source: https://freesound.org/s/50071/
+    - Modified: trimmed to 0.55s with fade-out
+
+Attribution
+-----------
+Metronome sounds by m1rk0 (https://freesound.org/people/m1rk0/)
+Licensed under CC-BY-3.0

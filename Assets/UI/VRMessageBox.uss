@@ -1,0 +1,78 @@
+/* ============================================
+   VR MessageBox Styles
+   Based on QuickMenu styling
+   ============================================ */
+
+/* Root Container */
+.messagebox-root {
+    width: 320px;
+    background-color: rgba(30, 35, 45, 0.95);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    align-items: center;
+}
+
+/* Title */
+.messagebox-title {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+/* Message */
+.messagebox-message {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* Button Row */
+.messagebox-buttons {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Buttons Base */
+.messagebox-btn {
+    flex-grow: 1;
+    height: 40px;
+    margin: 0 6px;
+    border-radius: 6px;
+    border-width: 2px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cancel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+/* Confirm Button */
+.confirm-btn {
+    background-color: rgba(66, 165, 245, 0.3);
+    border-color: rgb(66, 165, 245);
+    color: rgb(255, 255, 255);
+}
+
+.confirm-btn:hover {
+    background-color: rgb(66, 165, 245);
+    border-color: rgb(100, 185, 255);
+}

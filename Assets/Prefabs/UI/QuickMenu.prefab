@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6375220785270121186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5753972322014078973}
+  - component: {fileID: 6869008389957965510}
+  - component: {fileID: 3198029958889230067}
+  - component: {fileID: 235187898526388717}
+  m_Layer: 0
+  m_Name: QuickMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5753972322014078973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375220785270121186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 546793597943848263}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6869008389957965510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375220785270121186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ae34d2cec9a40a381940ee3d447a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoloBandStudio.UI.QuickMenu.FollowPlayerView
+  targetCamera: {fileID: 0}
+  forwardDistance: 1
+  verticalOffset: 0
+  horizontalOffset: 0
+  positionSmoothSpeed: 5
+  rotationSmoothSpeed: 5
+  horizontalRotationOnly: 0
+  rotationDeadzone: 15
+  minVerticalAngle: -30
+  maxVerticalAngle: 30
+  continuousFollow: 0
+  lazyFollow: 1
+  lazyFollowThreshold: 0.4
+--- !u!114 &3198029958889230067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375220785270121186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e2f027341d4c79a5abd68d3ce5f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoloBandStudio.UI.QuickMenu.QuickMenuController
+  uiDocument: {fileID: 8103139101810377305}
+  loopStationMenuUxml: {fileID: 9197481963319205126, guid: 33b96a771875b49288b27f773f52682d,
+    type: 3}
+  todMenuUxml: {fileID: 9197481963319205126, guid: 7df5563db43394aef931e8e04bf419b9,
+    type: 3}
+  settingsMenuUxml: {fileID: 9197481963319205126, guid: 6572ffea3283a484699f6cf1a3a87f08,
+    type: 3}
+  miscMenuUxml: {fileID: 9197481963319205126, guid: 584b739df7e0a44c9abcece181f8a8d3,
+    type: 3}
+  animationDuration: 0.25
+  toggleAction: {fileID: 0}
+  enableHaptics: 1
+  hapticAmplitude: 0.2
+  hapticDuration: 0.05
+  followPlayerView: {fileID: 6869008389957965510}
+  debugLog: 1
+--- !u!114 &235187898526388717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375220785270121186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed21461eb6d4747428166a8a55ae0b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoloBandStudio.UI.QuickMenu.TODMenuView
+  minSecondsPerHour: 1
+  maxSecondsPerHour: 120
+--- !u!1 &7644882370985397861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546793597943848263}
+  - component: {fileID: 8103139101810377305}
+  m_Layer: 0
+  m_Name: QuickMenuUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546793597943848263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644882370985397861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5753972322014078973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8103139101810377305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644882370985397861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: c6633e3622bb99649b1f3ffa07217cf2, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: debadc4242a104b86bbc59c0a9623f8f,
+    type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 0
+  m_WorldSpaceWidth: 500
+  m_WorldSpaceHeight: 300
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}

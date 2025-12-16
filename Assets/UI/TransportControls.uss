@@ -1,0 +1,62 @@
+/* ============================================
+   Transport Controls - Reusable Component
+   ============================================ */
+
+.transport-controls {
+    flex-direction: row;
+    align-items: center;
+}
+
+.transport-btn {
+    width: 52px;
+    height: 36px;
+    margin-right: 6px;
+    border-radius: 4px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.transport-btn .btn-label {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.play-btn {
+    background-color: rgb(60, 60, 60);
+    border-width: 2px;
+    border-color: rgb(76, 175, 80);
+}
+
+.play-btn:hover {
+    background-color: rgb(76, 175, 80);
+}
+
+.play-btn.playing {
+    background-color: rgb(76, 175, 80);
+    border-color: rgb(150, 255, 150);
+    border-width: 3px;
+}
+
+.play-btn.playing .btn-label {
+    color: rgb(0, 50, 0);
+}
+
+.stop-btn {
+    background-color: rgb(97, 97, 97);
+}
+
+.stop-btn:hover {
+    background-color: rgb(130, 130, 130);
+}
+
+/* Compact variant for floating UI */
+.transport-controls.compact .transport-btn {
+    width: 44px;
+    height: 32px;
+}
+
+.transport-controls.compact .transport-btn .btn-label {
+    font-size: 10px;
+}

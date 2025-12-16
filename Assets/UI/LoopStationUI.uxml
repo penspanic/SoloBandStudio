@@ -1,0 +1,135 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
+    editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI/CommonScrollbar.uss" />
+    <Style src="project://database/Assets/UI/CommonDropdown.uss" />
+    <Style src="project://database/Assets/UI/LoopStationUI.uss" />
+    <Style src="project://database/Assets/UI/TransportControls.uss" />
+    <Style src="project://database/Assets/UI/Dialogs.uss" />
+
+    <engine:VisualElement name="root" class="root-container">
+
+        <!-- Song Info Row: Current song name + New + Preset + Save + Load -->
+        <engine:VisualElement class="song-row">
+            <engine:VisualElement class="song-info">
+                <engine:Label text="Now Playing" class="song-info-label" />
+                <engine:Label name="song-name-label" text="New Session" class="song-name" />
+            </engine:VisualElement>
+            <engine:VisualElement class="song-controls">
+                <engine:Button name="new-btn" class="song-btn new-btn">
+                    <engine:Label text="NEW" class="btn-label" />
+                </engine:Button>
+                <engine:Button name="preset-btn" class="song-btn preset-btn">
+                    <engine:Label text="PRESET" class="btn-label" />
+                </engine:Button>
+                <engine:Button name="save-btn" class="song-btn save-btn-small">
+                    <engine:Label text="SAVE" class="btn-label" />
+                </engine:Button>
+                <engine:Button name="load-btn" class="song-btn load-btn-small">
+                    <engine:Label text="LOAD" class="btn-label" />
+                </engine:Button>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <!-- Transport Row: Play/Stop + Beat Display + BPM -->
+        <engine:VisualElement class="header-row">
+            <!-- Transport Controls -->
+            <engine:VisualElement name="transport-container" class="transport-controls">
+                <engine:Button name="play-btn" class="transport-btn play-btn">
+                    <engine:Label text="PLAY" class="btn-label" />
+                </engine:Button>
+                <engine:Button name="stop-btn" class="transport-btn stop-btn">
+                    <engine:Label text="STOP" class="btn-label" />
+                </engine:Button>
+            </engine:VisualElement>
+
+            <!-- Beat Display -->
+            <engine:VisualElement class="beat-group">
+                <engine:VisualElement class="beat-indicators">
+                    <engine:VisualElement name="beat-1" class="beat-indicator" />
+                    <engine:VisualElement name="beat-2" class="beat-indicator" />
+                    <engine:VisualElement name="beat-3" class="beat-indicator" />
+                    <engine:VisualElement name="beat-4" class="beat-indicator" />
+                </engine:VisualElement>
+                <engine:Label name="bar-label" text="Bar 1/4" class="bar-text" />
+            </engine:VisualElement>
+
+            <!-- BPM Control -->
+            <engine:VisualElement class="bpm-group">
+                <engine:Label name="bpm-label" text="120" class="bpm-text" />
+                <engine:Slider name="bpm-slider" low-value="60" high-value="180" value="120" class="bpm-slider" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <!-- Time Signature and Bars Row -->
+        <engine:VisualElement class="settings-row">
+            <!-- Time Signature -->
+            <engine:VisualElement class="setting-group">
+                <engine:Label text="Time Sig" class="setting-label" />
+                <engine:VisualElement class="time-sig-control">
+                    <engine:Button name="beats-down-btn" class="spin-btn">
+                        <engine:Label text="-" class="spin-label" />
+                    </engine:Button>
+                    <engine:Label name="time-sig-label" text="4/4" class="time-sig-text" />
+                    <engine:Button name="beats-up-btn" class="spin-btn">
+                        <engine:Label text="+" class="spin-label" />
+                    </engine:Button>
+                </engine:VisualElement>
+            </engine:VisualElement>
+
+            <!-- Total Bars -->
+            <engine:VisualElement class="setting-group">
+                <engine:Label text="Bars" class="setting-label" />
+                <engine:VisualElement class="bars-control">
+                    <engine:Button name="bars-down-btn" class="spin-btn">
+                        <engine:Label text="-" class="spin-label" />
+                    </engine:Button>
+                    <engine:Label name="bars-label" text="4" class="bars-text" />
+                    <engine:Button name="bars-up-btn" class="spin-btn">
+                        <engine:Label text="+" class="spin-label" />
+                    </engine:Button>
+                </engine:VisualElement>
+            </engine:VisualElement>
+
+            <!-- Loop Length Display -->
+            <engine:VisualElement class="setting-group loop-length-group">
+                <engine:Label text="Loop" class="setting-label" />
+                <engine:Label name="loop-length-label" text="16 beats" class="loop-length-text" />
+            </engine:VisualElement>
+
+            <!-- Metronome Toggle -->
+            <engine:VisualElement class="toggle-group">
+                <engine:Label text="Metro" class="setting-label" />
+                <engine:Button name="metronome-btn" class="toggle-btn">
+                    <engine:Label text="ON" class="btn-label" />
+                </engine:Button>
+            </engine:VisualElement>
+
+            <!-- Count-In Toggle -->
+            <engine:VisualElement class="toggle-group">
+                <engine:Label text="Count-In" class="setting-label" />
+                <engine:Button name="countin-btn" class="toggle-btn">
+                    <engine:Label text="ON" class="btn-label" />
+                </engine:Button>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <!-- Recording Row: Instrument + Record button -->
+        <engine:VisualElement class="recording-row">
+            <engine:Label text="Record" class="recording-label" />
+            <engine:DropdownField name="instrument-dropdown" class="instrument-dropdown" />
+            <engine:Button name="record-btn" class="transport-btn record-btn">
+                <engine:Label text="REC" class="btn-label" />
+            </engine:Button>
+        </engine:VisualElement>
+
+        <!-- Track List -->
+        <engine:VisualElement class="track-section">
+            <engine:Label text="TRACKS" class="section-label" />
+            <engine:ScrollView name="track-list" class="track-list" />
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

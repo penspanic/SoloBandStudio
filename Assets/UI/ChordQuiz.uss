@@ -1,0 +1,281 @@
+/* ============================================
+   Chord Quiz - Extends QuickMenu Theme
+   ============================================ */
+
+/* Root Container Override */
+.chord-quiz-root {
+    width: 360px;
+    padding: 0;
+}
+
+/* ============================================
+   Header Section
+   ============================================ */
+
+.quiz-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.score-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.score-label {
+    font-size: 28px;
+    -unity-font-style: bold;
+    color: rgb(76, 175, 80);
+}
+
+.score-subtitle {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+.progress-container {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.progress-label {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.accuracy-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   Chord Display
+   ============================================ */
+
+.chord-display {
+    padding: 24px 16px;
+    margin: 12px;
+    background-color: rgba(66, 165, 245, 0.1);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(66, 165, 245, 0.3);
+    align-items: center;
+    justify-content: center;
+}
+
+.chord-name {
+    font-size: 56px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.instruction {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 8px;
+}
+
+.chord-display.waiting {
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chord-display.waiting .chord-name {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   Timer
+   ============================================ */
+
+.timer-container {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 12px 12px 12px;
+    height: 24px;
+}
+
+.timer-bar-bg {
+    flex-grow: 1;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.timer-bar {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(66, 165, 245);
+    border-radius: 4px;
+    transition-duration: 0.1s;
+}
+
+.timer-bar.warning {
+    background-color: rgb(255, 193, 7);
+}
+
+.timer-bar.danger {
+    background-color: rgb(244, 67, 54);
+}
+
+.timer-label {
+    width: 40px;
+    margin-left: 8px;
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-text-align: middle-right;
+}
+
+/* ============================================
+   Difficulty Buttons
+   ============================================ */
+
+.difficulty-row {
+    margin: 0 12px 12px 12px;
+}
+
+.diff-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.diff-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.diff-btn.active {
+    background-color: rgba(66, 165, 245, 0.3);
+    border-color: rgb(66, 165, 245);
+}
+
+.diff-btn.active .preset-label {
+    color: rgb(255, 255, 255);
+}
+
+/* ============================================
+   Control Buttons
+   ============================================ */
+
+.quiz-controls {
+    margin: 0 12px 12px 12px;
+    padding: 0;
+}
+
+.start-btn {
+    flex-grow: 1;
+    height: 44px;
+}
+
+.stop-btn {
+    flex-grow: 1;
+    height: 44px;
+}
+
+.start-btn .control-label,
+.stop-btn .control-label {
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.restart-btn {
+    margin-top: 16px;
+    width: 140px;
+    height: 40px;
+}
+
+/* ============================================
+   Feedback Panel (Overlay)
+   ============================================ */
+
+.feedback-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.feedback-panel.visible {
+    opacity: 1;
+}
+
+.feedback-panel.correct {
+    background-color: rgba(76, 175, 80, 0.9);
+}
+
+.feedback-panel.wrong {
+    background-color: rgba(244, 67, 54, 0.9);
+}
+
+.feedback-label {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.points-label {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 8px;
+}
+
+/* ============================================
+   Session Complete Overlay
+   ============================================ */
+
+.session-complete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 35, 45, 0.98);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.complete-title {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(66, 165, 245);
+    margin-bottom: 16px;
+}
+
+.final-score {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(76, 175, 80);
+    margin-bottom: 8px;
+}
+
+.final-accuracy {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.hidden {
+    display: none;
+}

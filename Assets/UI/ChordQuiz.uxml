@@ -1,0 +1,73 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+    <Style src="project://database/Assets/UI/ChordQuiz.uss" />
+
+    <ui:VisualElement name="chord-quiz-root" class="quick-menu-root chord-quiz-root">
+
+        <!-- Header: Score & Progress -->
+        <ui:VisualElement name="header" class="quiz-header">
+            <ui:VisualElement name="score-container" class="score-container">
+                <ui:Label name="score-label" class="score-label" text="0" />
+                <ui:Label text="SCORE" class="score-subtitle" />
+            </ui:VisualElement>
+            <ui:VisualElement name="progress-container" class="progress-container">
+                <ui:Label name="progress-label" class="progress-label" text="0/10" />
+                <ui:Label name="accuracy-label" class="accuracy-label" text="0%" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Main Display: Chord Name -->
+        <ui:VisualElement name="chord-display" class="chord-display">
+            <ui:Label name="chord-name" class="chord-name" text="C" />
+            <ui:Label name="instruction" class="instruction" text="Play this chord on the piano" />
+        </ui:VisualElement>
+
+        <!-- Timer Bar -->
+        <ui:VisualElement name="timer-container" class="timer-container">
+            <ui:VisualElement name="timer-bar-bg" class="timer-bar-bg">
+                <ui:VisualElement name="timer-bar" class="timer-bar" />
+            </ui:VisualElement>
+            <ui:Label name="timer-label" class="timer-label" text="30s" />
+        </ui:VisualElement>
+
+        <!-- Difficulty Selector -->
+        <ui:VisualElement name="difficulty-row" class="preset-row difficulty-row">
+            <ui:Button name="easy-btn" class="preset-btn diff-btn active">
+                <ui:Label text="Easy" class="preset-label" />
+            </ui:Button>
+            <ui:Button name="medium-btn" class="preset-btn diff-btn">
+                <ui:Label text="Medium" class="preset-label" />
+            </ui:Button>
+            <ui:Button name="hard-btn" class="preset-btn diff-btn">
+                <ui:Label text="Hard" class="preset-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Control Buttons -->
+        <ui:VisualElement name="controls" class="control-row quiz-controls">
+            <ui:Button name="start-btn" class="control-btn play-pause-btn start-btn">
+                <ui:Label text="START" class="control-label" />
+            </ui:Button>
+            <ui:Button name="stop-btn" class="control-btn play-pause-btn paused stop-btn hidden">
+                <ui:Label text="STOP" class="control-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Feedback Overlay -->
+        <ui:VisualElement name="feedback-panel" class="feedback-panel hidden">
+            <ui:Label name="feedback-label" class="feedback-label" text="Correct!" />
+            <ui:Label name="points-label" class="points-label" text="+100" />
+        </ui:VisualElement>
+
+        <!-- Session Complete Overlay -->
+        <ui:VisualElement name="session-complete" class="session-complete hidden">
+            <ui:Label text="Session Complete!" class="complete-title" />
+            <ui:Label name="final-score" class="final-score" text="Score: 0" />
+            <ui:Label name="final-accuracy" class="final-accuracy" text="Accuracy: 0%" />
+            <ui:Button name="restart-btn" class="control-btn play-pause-btn restart-btn">
+                <ui:Label text="Play Again" class="control-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

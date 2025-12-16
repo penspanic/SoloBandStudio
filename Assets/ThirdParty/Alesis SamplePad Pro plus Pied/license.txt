@@ -1,0 +1,11 @@
+Model Information:
+* title:	Alesis SamplePad Pro plus Pied
+* source:	https://sketchfab.com/3d-models/alesis-samplepad-pro-plus-pied-3b7dd743cf25495b898e75bba8366f30
+* author:	Wazahole (https://sketchfab.com/Wazahole)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Alesis SamplePad Pro plus Pied" (https://sketchfab.com/3d-models/alesis-samplepad-pro-plus-pied-3b7dd743cf25495b898e75bba8366f30) by Wazahole (https://sketchfab.com/Wazahole) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

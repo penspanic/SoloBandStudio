@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8143f2de6784db2a57b3e4a1b533d7, type: 3}
+  m_Name: BassSampleBank
+  m_EditorClassIdentifier: Assembly-CSharp::SoloBandStudio.Core.InstrumentSampleBank
+  samples:
+  - clip: {fileID: 8300000, guid: 8fa16c5a1e71b49a1b380e8a68ccac5a, type: 3}
+    midiNote: 24
+    noteName: C1
+  - clip: {fileID: 8300000, guid: 58c20e38fa44b4997afed63df5a135bd, type: 3}
+    midiNote: 30
+    noteName: F#1
+  - clip: {fileID: 8300000, guid: 5df346853816e465b95d3e28ebec7fe1, type: 3}
+    midiNote: 36
+    noteName: C2
+  - clip: {fileID: 8300000, guid: 7c7cb66ff251c4a81a380892e2f0adba, type: 3}
+    midiNote: 42
+    noteName: F#2
+  - clip: {fileID: 8300000, guid: 6c658fbddff48488b9289d6015e6cebb, type: 3}
+    midiNote: 48
+    noteName: C3
+  - clip: {fileID: 8300000, guid: 0f20e123d6ba54af3aed3a9dc49c8169, type: 3}
+    midiNote: 54
+    noteName: F#3
+  - clip: {fileID: 8300000, guid: da7b34f8b0e32424c8cb39376d3c9f73, type: 3}
+    midiNote: 60
+    noteName: C4
+  - clip: {fileID: 8300000, guid: 13ccae9b3df6b43ea81fb03d6715d995, type: 3}
+    midiNote: 66
+    noteName: F#4
+  - clip: {fileID: 8300000, guid: 6a1da056b57944c10aace51c165352ca, type: 3}
+    midiNote: 72
+    noteName: C5
+  - clip: {fileID: 8300000, guid: ebcc231be26b2413a80fb94829f9eb38, type: 3}
+    midiNote: 78
+    noteName: F#5
+  - clip: {fileID: 8300000, guid: 8da5043edd66f459c82104c19421f7d3, type: 3}
+    midiNote: 83
+    noteName: B5
+  maxPitchShiftSemitones: 4

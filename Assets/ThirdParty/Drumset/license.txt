@@ -1,0 +1,11 @@
+Model Information:
+* title:	Drum Set
+* source:	https://sketchfab.com/3d-models/drum-set-e9b617dfc2db4170a3843f139d7d9f85
+* author:	Tiago.Costa (https://sketchfab.com/Tiago.Costa)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Drum Set" (https://sketchfab.com/3d-models/drum-set-e9b617dfc2db4170a3843f139d7d9f85) by Tiago.Costa (https://sketchfab.com/Tiago.Costa) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

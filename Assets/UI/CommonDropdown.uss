@@ -1,0 +1,98 @@
+/* ============================================
+   Common Dropdown Styles - Dark Theme
+   Shared across PianoRoll, LoopStation, etc.
+   ============================================ */
+
+/* Base Dropdown Field */
+.unity-base-popup-field {
+    background-color: rgba(45, 45, 55, 0.9);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.unity-base-popup-field:hover {
+    background-color: rgba(55, 55, 65, 0.95);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.unity-base-popup-field:focus {
+    border-color: rgb(100, 180, 255);
+}
+
+/* Dropdown Input Area */
+.unity-base-popup-field__input {
+    background-color: transparent;
+    border-width: 0;
+    padding: 4px 8px;
+}
+
+/* Dropdown Text */
+.unity-base-popup-field__text {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+}
+
+/* Dropdown Arrow */
+.unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.7);
+    width: 12px;
+    height: 12px;
+}
+
+/* Dropdown Label */
+.unity-base-popup-field .unity-base-field__label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    min-width: 30px;
+    padding-right: 6px;
+}
+
+/* ============================================
+   Popup Menu (the dropdown list itself)
+   ============================================ */
+
+/* Note: Unity's popup menus are rendered outside the normal hierarchy,
+   so we need to target them with generic selectors */
+
+.unity-base-dropdown__container-outer {
+    background-color: rgb(35, 35, 42);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.unity-base-dropdown__container-inner {
+    background-color: transparent;
+}
+
+.unity-base-dropdown__item {
+    padding: 6px 10px;
+    background-color: transparent;
+}
+
+.unity-base-dropdown__item:hover {
+    background-color: rgba(100, 180, 255, 0.3);
+}
+
+.unity-base-dropdown__item:checked {
+    background-color: rgba(100, 180, 255, 0.5);
+}
+
+.unity-base-dropdown__label {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+}
+
+.unity-base-dropdown__checkmark {
+    -unity-background-image-tint-color: rgb(100, 180, 255);
+}
+
+/* ScrollView inside dropdown */
+.unity-base-dropdown .unity-scroll-view {
+    background-color: transparent;
+}
+
+.unity-base-dropdown .unity-scroller {
+    background-color: rgb(30, 30, 35);
+}

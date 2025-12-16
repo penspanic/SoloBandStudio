@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+
+    <ui:VisualElement name="misc-root" class="misc-panel">
+
+        <!-- Section: Player -->
+        <ui:VisualElement class="misc-section">
+            <ui:Label text="PLAYER" class="section-title" />
+
+            <ui:Button name="return-spawn-btn" class="misc-btn primary-btn">
+                <ui:Label text="Return to Spawn" class="misc-btn-label" />
+            </ui:Button>
+
+            <ui:Label name="spawn-info-label" text="" class="info-label" />
+        </ui:VisualElement>
+
+        <!-- Section: Quick Actions -->
+        <ui:VisualElement class="misc-section">
+            <ui:Label text="QUICK ACTIONS" class="section-title" />
+
+            <ui:Button name="recenter-btn" class="misc-btn">
+                <ui:Label text="Recenter View" class="misc-btn-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

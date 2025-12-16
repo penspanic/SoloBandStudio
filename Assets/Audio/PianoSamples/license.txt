@@ -1,0 +1,13 @@
+Sample Information:
+* title:	Gentle Grand
+* source:	https://www.pianobook.co.uk/packs/gentle-grand/
+* author:	Dan Keen
+
+License:
+* license type:	Pianobook EULA (https://www.pianobook.co.uk/terms-conditions/)
+* terms:	Free to use in commercial and non-commercial musical compositions.
+          Redistribution or resale of the samples themselves is prohibited.
+          Only the original downloader has the right to use these samples.
+
+If you use these samples in your project, please credit:
+Piano samples from "Gentle Grand" by Dan Keen, available at https://www.pianobook.co.uk/packs/gentle-grand/

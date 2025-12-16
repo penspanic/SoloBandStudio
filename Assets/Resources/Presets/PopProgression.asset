@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f7248106d4462f8bd8bee1a9e6d83, type: 3}
+  m_Name: PopProgression
+  m_EditorClassIdentifier: 
+  songName: Pop Progression
+  artist: Demo
+  description: Classic I-V-vi-IV progression in C major (C-G-Am-F)
+  bpm: 120
+  beatsPerBar: 4
+  totalBars: 4
+  tracks:
+  - trackName: Chords
+    instrumentType: 0
+    events:
+    - beatTime: 0
+      note: 48
+      velocity: 0.7
+      duration: 4
+    - beatTime: 0
+      note: 52
+      velocity: 0.7
+      duration: 4
+    - beatTime: 0
+      note: 55
+      velocity: 0.7
+      duration: 4
+    - beatTime: 4
+      note: 55
+      velocity: 0.7
+      duration: 4
+    - beatTime: 4
+      note: 59
+      velocity: 0.7
+      duration: 4
+    - beatTime: 4
+      note: 62
+      velocity: 0.7
+      duration: 4
+    - beatTime: 8
+      note: 57
+      velocity: 0.7
+      duration: 4
+    - beatTime: 8
+      note: 60
+      velocity: 0.7
+      duration: 4
+    - beatTime: 8
+      note: 64
+      velocity: 0.7
+      duration: 4
+    - beatTime: 12
+      note: 53
+      velocity: 0.7
+      duration: 4
+    - beatTime: 12
+      note: 57
+      velocity: 0.7
+      duration: 4
+    - beatTime: 12
+      note: 60
+      velocity: 0.7
+      duration: 4
+    isMuted: 0
+    volume: 1

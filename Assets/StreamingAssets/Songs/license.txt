@@ -1,0 +1,16 @@
+MIDI Files - Public Domain
+==========================
+
+All MIDI files in this folder are transcriptions of classical
+compositions that are in the public domain.
+
+Composers:
+- Johann Sebastian Bach (1685-1750)
+- Johann Pachelbel (1653-1706)
+- Ludwig van Beethoven (1770-1827)
+- Claude Debussy (1862-1918)
+- Frédéric Chopin (1810-1849)
+- Franz Schubert (1797-1828)
+
+The MIDI transcriptions themselves are provided for educational
+purposes. You may add your own MIDI files to this folder.

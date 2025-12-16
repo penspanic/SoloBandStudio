@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8143f2de6784db2a57b3e4a1b533d7, type: 3}
+  m_Name: GentleGrandSampleBank
+  m_EditorClassIdentifier:
+  samples:
+  - clip: {fileID: 8300000, guid: 67cd74b8f09ee4c0fa388ffe4e5d9447, type: 3}
+    midiNote: 24
+    noteName: C1
+  - clip: {fileID: 8300000, guid: a224bacea293d4167891896fb5a631e3, type: 3}
+    midiNote: 27
+    noteName: D#1
+  - clip: {fileID: 8300000, guid: a9527469ba81d4b49a83a1d35518b847, type: 3}
+    midiNote: 31
+    noteName: G1
+  - clip: {fileID: 8300000, guid: ff49eb40c2dc645959dec74ac8574a50, type: 3}
+    midiNote: 35
+    noteName: B1
+  - clip: {fileID: 8300000, guid: 45bb82b677de84ffc82862de0a1e0088, type: 3}
+    midiNote: 38
+    noteName: D2
+  - clip: {fileID: 8300000, guid: b2c6c3b5dbc6c48b0987569487b56b02, type: 3}
+    midiNote: 42
+    noteName: F#2
+  - clip: {fileID: 8300000, guid: 57ca8295388d94658b9901ceb4f3267c, type: 3}
+    midiNote: 45
+    noteName: A2
+  - clip: {fileID: 8300000, guid: 542b63ddfa44f4c1496dac87d526bcf6, type: 3}
+    midiNote: 49
+    noteName: C#3
+  - clip: {fileID: 8300000, guid: a6397c5872b734c91a77334bd09ff41e, type: 3}
+    midiNote: 52
+    noteName: E3
+  - clip: {fileID: 8300000, guid: c14d3c24448b342819388d39327a2204, type: 3}
+    midiNote: 56
+    noteName: G#3
+  - clip: {fileID: 8300000, guid: 0dd819ddf833746269c6fc45f885cf50, type: 3}
+    midiNote: 59
+    noteName: B3
+  - clip: {fileID: 8300000, guid: 26d8d1d54001d41199adc25ce1b36dde, type: 3}
+    midiNote: 63
+    noteName: D#4
+  - clip: {fileID: 8300000, guid: d47c2f96409a540938902d27c7768a9b, type: 3}
+    midiNote: 66
+    noteName: F#4
+  - clip: {fileID: 8300000, guid: 5c28502a90c2447cfb3ae6e244656225, type: 3}
+    midiNote: 69
+    noteName: A4
+  - clip: {fileID: 8300000, guid: 5b043cd57dc3241d3ba3769db9888cd3, type: 3}
+    midiNote: 73
+    noteName: C#5
+  - clip: {fileID: 8300000, guid: 052e2f42c926e4397bf149a5f408422e, type: 3}
+    midiNote: 76
+    noteName: E5
+  - clip: {fileID: 8300000, guid: 3b461d090ca6a44ccb947889675e6418, type: 3}
+    midiNote: 80
+    noteName: G#5
+  - clip: {fileID: 8300000, guid: 740759343f8a64748a3a77d8a6f76599, type: 3}
+    midiNote: 83
+    noteName: B5
+  - clip: {fileID: 8300000, guid: 1cae2c52229cc4fde97825ecb0b8c571, type: 3}
+    midiNote: 87
+    noteName: D#6
+  - clip: {fileID: 8300000, guid: 5754bcf515f7f419a83ab8252bf86816, type: 3}
+    midiNote: 90
+    noteName: F#6
+  - clip: {fileID: 8300000, guid: 4c154d89579134683917fcfd458fd7f1, type: 3}
+    midiNote: 94
+    noteName: A#6
+  - clip: {fileID: 8300000, guid: 5e975ce0133a24407ba0e6ec1d2daf26, type: 3}
+    midiNote: 99
+    noteName: D#7
+  - clip: {fileID: 8300000, guid: 0250a9dfa8523450685586d4446a16d0, type: 3}
+    midiNote: 105
+    noteName: A7
+  maxPitchShiftSemitones: 4

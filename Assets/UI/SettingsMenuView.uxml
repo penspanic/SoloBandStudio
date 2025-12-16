@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+
+    <ui:VisualElement name="settings-root" class="settings-panel">
+        <ui:Label text="Settings coming soon..." class="placeholder-label" />
+    </ui:VisualElement>
+</ui:UXML>

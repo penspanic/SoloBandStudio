@@ -1,0 +1,111 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuickMenu.uss" />
+    <Style src="project://database/Assets/UI/CommonDropdown.uss" />
+
+    <ui:VisualElement name="loopstation-root" class="loopstation-panel">
+
+        <!-- Status Display -->
+        <ui:VisualElement class="status-display">
+            <ui:VisualElement class="status-item">
+                <ui:VisualElement name="play-indicator" class="status-indicator" />
+                <ui:Label name="play-status-label" text="Stopped" class="status-label" />
+            </ui:VisualElement>
+            <ui:VisualElement class="status-item">
+                <ui:VisualElement name="record-indicator" class="status-indicator" />
+                <ui:Label name="record-status-label" text="Idle" class="status-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Transport Controls -->
+        <ui:VisualElement class="transport-row">
+            <ui:Button name="play-btn" class="transport-btn play-btn">
+                <ui:Label name="play-label" text="Play" class="transport-label" />
+            </ui:Button>
+            <ui:Button name="stop-btn" class="transport-btn stop-btn">
+                <ui:Label text="Stop" class="transport-label" />
+            </ui:Button>
+            <ui:Button name="record-btn" class="transport-btn record-btn">
+                <ui:Label name="record-label" text="Rec" class="transport-label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Instrument Dropdown -->
+        <ui:VisualElement class="dropdown-row">
+            <ui:Label text="INSTRUMENT" class="slider-label" />
+            <ui:DropdownField name="instrument-dropdown" class="instrument-dropdown" />
+        </ui:VisualElement>
+
+        <!-- BPM Slider -->
+        <ui:VisualElement class="slider-row">
+            <ui:VisualElement class="slider-header">
+                <ui:Label text="TEMPO" class="slider-label" />
+                <ui:Label name="bpm-value" text="120 BPM" class="slider-value" />
+            </ui:VisualElement>
+            <ui:Slider name="bpm-slider" low-value="60" high-value="180" value="120" class="bpm-slider" />
+        </ui:VisualElement>
+
+        <!-- Time Signature & Bars -->
+        <ui:VisualElement class="settings-row">
+            <!-- Beats Per Bar -->
+            <ui:VisualElement class="setting-group">
+                <ui:Label text="BEATS" class="setting-label" />
+                <ui:VisualElement class="spinner">
+                    <ui:Button name="beats-down-btn" class="spinner-btn">
+                        <ui:Label text="-" class="spinner-label" />
+                    </ui:Button>
+                    <ui:Label name="beats-value" text="4" class="spinner-value" />
+                    <ui:Button name="beats-up-btn" class="spinner-btn">
+                        <ui:Label text="+" class="spinner-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Total Bars -->
+            <ui:VisualElement class="setting-group">
+                <ui:Label text="BARS" class="setting-label" />
+                <ui:VisualElement class="spinner">
+                    <ui:Button name="bars-down-btn" class="spinner-btn">
+                        <ui:Label text="-" class="spinner-label" />
+                    </ui:Button>
+                    <ui:Label name="bars-value" text="4" class="spinner-value" />
+                    <ui:Button name="bars-up-btn" class="spinner-btn">
+                        <ui:Label text="+" class="spinner-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Options Row: Quantize, Metronome, Count-In -->
+        <ui:VisualElement class="settings-row options-row">
+            <!-- Quantize -->
+            <ui:VisualElement class="setting-group">
+                <ui:Label text="QUANTIZE" class="setting-label" />
+                <ui:Button name="quantize-cycle-btn" class="toggle-btn active">
+                    <ui:Label name="quantize-cycle-label" text="1/16" class="toggle-label" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- Metronome -->
+            <ui:VisualElement class="setting-group">
+                <ui:Label text="METRO" class="setting-label" />
+                <ui:Button name="metronome-btn" class="toggle-btn active">
+                    <ui:Label name="metronome-label" text="ON" class="toggle-label" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- Count-In -->
+            <ui:VisualElement class="setting-group">
+                <ui:Label text="COUNT-IN" class="setting-label" />
+                <ui:Button name="countin-btn" class="toggle-btn active">
+                    <ui:Label name="countin-label" text="ON" class="toggle-label" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Loop Info -->
+        <ui:VisualElement class="loop-info">
+            <ui:Label name="loop-info-label" text="16 beats / loop" class="loop-info-text" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

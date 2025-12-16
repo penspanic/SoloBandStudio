@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f7248106d4462f8bd8bee1a9e6d83, type: 3}
+  m_Name: CanonInD
+  m_EditorClassIdentifier: 
+  songName: Canon in D (Chords)
+  artist: Pachelbel
+  description: 'Classic chord progression: D-A-Bm-F#m-G-D-G-A'
+  bpm: 70
+  beatsPerBar: 4
+  totalBars: 4
+  tracks:
+  - trackName: Chord Progression
+    instrumentId: Piano
+    instrumentType: 0
+    events:
+    - beatTime: 0
+      note: 50
+      velocity: 0.7
+      duration: 2
+    - beatTime: 0
+      note: 54
+      velocity: 0.7
+      duration: 2
+    - beatTime: 0
+      note: 57
+      velocity: 0.7
+      duration: 2
+    - beatTime: 2
+      note: 49
+      velocity: 0.7
+      duration: 2
+    - beatTime: 2
+      note: 52
+      velocity: 0.7
+      duration: 2
+    - beatTime: 2
+      note: 57
+      velocity: 0.7
+      duration: 2
+    - beatTime: 4
+      note: 47
+      velocity: 0.7
+      duration: 2
+    - beatTime: 4
+      note: 50
+      velocity: 0.7
+      duration: 2
+    - beatTime: 4
+      note: 54
+      velocity: 0.7
+      duration: 2
+    - beatTime: 6
+      note: 54
+      velocity: 0.7
+      duration: 2
+    - beatTime: 6
+      note: 57
+      velocity: 0.7
+      duration: 2
+    - beatTime: 6
+      note: 61
+      velocity: 0.7
+      duration: 2
+    - beatTime: 8
+      note: 55
+      velocity: 0.7
+      duration: 2
+    - beatTime: 8
+      note: 59
+      velocity: 0.7
+      duration: 2
+    - beatTime: 8
+      note: 62
+      velocity: 0.7
+      duration: 2
+    - beatTime: 10
+      note: 50
+      velocity: 0.7
+      duration: 2
+    - beatTime: 10
+      note: 54
+      velocity: 0.7
+      duration: 2
+    - beatTime: 10
+      note: 57
+      velocity: 0.7
+      duration: 2
+    - beatTime: 12
+      note: 55
+      velocity: 0.7
+      duration: 2
+    - beatTime: 12
+      note: 59
+      velocity: 0.7
+      duration: 2
+    - beatTime: 12
+      note: 62
+      velocity: 0.7
+      duration: 2
+    - beatTime: 14
+      note: 49
+      velocity: 0.7
+      duration: 2
+    - beatTime: 14
+      note: 52
+      velocity: 0.7
+      duration: 2
+    - beatTime: 14
+      note: 57
+      velocity: 0.7
+      duration: 2
+    isMuted: 0
+    volume: 1
