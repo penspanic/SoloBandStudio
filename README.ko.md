@@ -16,7 +16,7 @@
 
 ## 데모
 
-[![Demo Video](docs/images/demo-thumbnail.png)](https://youtu.be/NE7gBQYXINo)
+[데모 영상 보기](https://youtu.be/NE7gBQYXINo)
 
 > **참고:** 이 데모는 오픈소스화 이전에 녹화되었습니다. 영상에 나오는 일부 기능(야간 조명, 랜턴, 야외 환경)은 유료 에셋 제거로 인해 이 저장소에 포함되어 있지 않습니다.
 
