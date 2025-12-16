@@ -16,7 +16,7 @@
 
 ## Demo
 
-[![Demo Video](docs/images/demo-thumbnail.png)](https://youtube.com/watch?v=VIDEO_ID)
+[![Demo Video](docs/images/demo-thumbnail.png)](https://youtu.be/NE7gBQYXINo)
 
 > **Note:** This demo was recorded before open-sourcing. Some features shown (night lighting, lanterns, outdoor environments) are not included in this repository due to removed paid assets.
 
